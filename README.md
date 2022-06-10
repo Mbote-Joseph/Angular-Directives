@@ -1,4 +1,25 @@
-# AgularDirectives
+# Angular Directives
+
+## Types of Directive In Angular
+
+### Component Directives
+
+`@Component({ // Component directives selector: 'app-root', templateUrl: './app.component.html', styleUrls: ['./app.component.css'], }) `
+
+### Structural Directives
+
+`*ngFor= "let fruit of fruits"`
+`*ngIf="fruit"`
+`[*ngSwitch]`
+
+### Attribute Directives
+
+`[(ngModel)]`
+
+### Custom Directives
+
+`ng generate directive mydirective`
+`constructor(element: ElementRef) { element.nativeElement.style.backgroundColor = 'yellow'; }`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
 
