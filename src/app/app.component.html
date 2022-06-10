@@ -4,10 +4,11 @@
   *ngFor="let fruit of Fruits"
   [class.selected]="fruit == selectedFruit"
   (click)="onSelect(fruit)"
+  class="container"
 >
-  <h2>
+  <div class="alert alert-primary" role="alert">
     <span>{{ fruit.id }}</span> => {{ fruit.name }} - {{ fruit.price }}
-  </h2>
+  </div>
 </div>
 
 <br />
@@ -19,7 +20,7 @@
   </h2>
   <div>
     <label>Name:</label>
-    <input [(ngModel)]="selectedFruit.name" />
+    <input [(ngModel)]="selectedFruit.name" class="form-group" />
   </div>
 </div>
 <!-- ngSwitch Directive -->
